@@ -15,7 +15,7 @@ app.get('/calculator', (req, res) => {
 
 app.post('/calculator-result', (req, res) => {
     let result = 0;
-    console.log(req.body.operation);
+    console.log(req.body);
 
     let op = req.body.operation;
     let a = Number(req.body.value_a);
